@@ -5,4 +5,4 @@ RUN gem update --system
 RUN gem install jekyll
 
 ENTRYPOINT [ "jekyll" ]
-CMD [ "--help" ]
+CMD [ "build" ]
