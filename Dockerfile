@@ -5,5 +5,5 @@ RUN gem update --system
 RUN gem install bundler
 RUN gem install jekyll
 
-COPY build.sh build.sh
-ENTRYPOINT [ "/bin/sh", "./build.sh" ]
+COPY build.sh /
+ENTRYPOINT [ "/build.sh" ]
